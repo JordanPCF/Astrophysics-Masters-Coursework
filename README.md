@@ -15,14 +15,14 @@ Follow-up observations with the Hubble Space Telescope (HST) and the Keck telesc
 
 This motivated further observations of AU Mic's debris disk. In 2014, it was observed with the Spectro-Polarimetric High-contrast Exoplanet REsearch instrument (SPHERE) at the Very Large Telescope (VLT). The high angular resolution and contrast revealed the structures above the disk midplane in the southeast ansa of the disk. These arched intensity variations are depicted in Figures 1 and 2. 
 
-<img src="disk doop.png" alt="drawing" style="width:420px;"/>
+<img src="images/disk doop.png" alt="drawing" style="width:420px;"/>
 
 __Figure 1:__ _Various direct images of AU Microscopii's debris disk with strong enough resolution to see structures above the midplane in the southeast ansa of the disk. (Figure 1 of Boccaletti et al. 2015)_
 
 
 
 
-<img src="observed.png" alt="drawing" style="width:420px;"/>
+<img src="images/observed.png" alt="drawing" style="width:420px;"/>
 
 __Figure 2:__ _A closer look at the five main features: undulating intensity variations. (Figure 2 of Boccaletti et al. 2015)_ 
 
@@ -32,7 +32,7 @@ __Figure 2:__ _A closer look at the five main features: undulating intensity var
 
 Typically leftover gas, resonances, or outflows from planets can explain structures in debris disks, but these hypotheses cannot account for the features' radial speeds exceeding the escape velocity, the increased speed with increased stellocentric distance, nor the isolation of the structures to one side of the disk (Chiang & Fung 2018). These anomalies, in addition to the knowledge that most of the disk mass is concentrated in the birth ring with a radius of approximately 35 AU, compelled Chiang & Fung to postulate that the features are sub-micron dust clouds being accelerated by the stellar wind. These sub-micron grains are produced at an exponential rate due to an 'avalanche' or a series of violent collisions at the intersection of the birth ring and a secondary ring composed of debris from a destroyed planetesimal (Chiang & Fung 2018). The geometry of this avalanche theory is shown in Figure 3 and more details on the mechanics of this model can be found in Chiang & Fung 2018. 
 
-<img src="rings.png" alt="drawing" style="width:420px;"/>
+<img src="images/rings.png" alt="drawing" style="width:420px;"/>
 __Figure 3:__ _Illustration of Chiang & Fung's avalanche theory (Figure 1 in Chiang & Fung 2018)._
 
 
@@ -56,7 +56,7 @@ The rotation of the star bends the magnetic field lines into Archimedean spirals
 
 
 
-![a](FSU.gif)
+![a](images/FSU.gif)
 __Figure 4:__
 _The stellar rotation, misalignment between the rotation and magnetic axes, and the stellar wind collectively warp the current sheet into the Parker spiral shown here in blue. This astrospheric current sheet serves as a boundary between opposite polarities of the magnetic field. The magnetic field lines shown in yellow follow Archimedean spirals._
 
@@ -129,47 +129,41 @@ $$ $$
 | C&F 18 | 0 | 20 (40) | 2 (4) | 7.5 yrs | 400 km/s | na | na | 20 yrs |
 
 __Table 1:__ _A comparison of the free parameter values used in Chiang & Fung's and our analysis._
-$$ $$
 
-$$ $$
 
-Most notably, we find that the period of the magnetic cycle must be much shorter than 20 years in order for the magnetic field to switch signs more frequently and create the oscillating behavior. This shorter period may actually be an improvement on the model for AU Mic since a criticism of the avalanche theory is the long duration of the flaring high phase. There is great agreement between our two wind strengths $\beta_{\textrm{high}}$ and $\beta_{\textrm{low}}$.  
+Most notably, we find that the period of the magnetic cycle must be much shorter than 20 years in order for the magnetic field to switch signs more frequently and create the oscillating behavior. This shorter period may actually be an improvement on the model for AU Mic since a criticism of the avalanche theory is the long duration of the flaring high phase. There is great agreement between our two wind strengths ![](https://latex.codecogs.com/png.latex?%5Cbeta_%7B%5Ctextrm%7Bhigh%7D%7D) and ![](https://latex.codecogs.com/png.latex?%5Cbeta_%7B%5Ctextrm%7Blow%7D%7D).  
 
-$$ $$
 
-$$ $$
-<img src="z vs x shaded.png" alt="drawing" style="width:500px;"/>
+<img src="images/z vs x shaded.png" alt="drawing" style="width:500px;"/>
 
 __Figure 4:__
 A charged dust grain follows this blue path from right to left as it is expelled by the stellar wind and the lorentz force. The observed projected stellocentric distance of the five features are shown with vertical lines and corresponding shaded error bars. The simulated trajectory reproduces the five features A-E, the first three of which match closely with the observed peak locations.
 
 During our analysis, there was concern that adjusting the free parameters would cause us to stray away from the progress Chiang & Fung made in reproducing the projected velocities of the clouds. We determine the projected velocities of the five clouds by tracking the distance a particle of that particular cloud travels in one year (a short enough time scale to be similar to an instantaneous velocity). In Figure 5 below we compare our estimated projected velocities with those observed by Boccaletti et al. As is shown in Figure 4, there is great agreement among the projected distances of clouds A, B, and C, but the projected velocities are too large. Conversely, for clouds D and E, the simulated projected velocities agree well with the observed ones, but the projected distances are too large. 
 
-<img src="projected velocity.png" alt="drawing" style="width:500px;"/>
+<img src="images/projected velocity.png" alt="drawing" style="width:500px;"/>
 
 __Figure 5:__ _A comparison of observed and our simulated projected velocities and distances of the five features._
-$$ $$
-
-$$ $$
-
-This particular trajectory in the above 2 figures was simulated with very specific parameter values found by essentially trial-and-error. We hope to perform a Monte Carlo simulation in future work to determine the form of a typical trajectory, and to find the best fit for the multiple free parameters listed in __Table 1__. Something we discovered early on is the high sensitivity to small changes in the free parameter values. This is somewhat disheartening as it seems likely that many of the dust grains in the cloud will not follow this particular path and will be launched far above or below the disk. In the future we hope to look at the distribution of $\left|\dot\theta_0\right|$ for instance among the grains created from avalanches to see how the clouds would move.  
 
 
-In the figures below, we plot the path of the dust grain in physical space for various parameter values. In these plots, if a parameter is not being varied, its value is given in Table 1. It is evident that a charged particle will be launched into one direction if $\left|\dot\theta_0\right|$, $t_{\textrm{mag}}$, or $v_{\textrm{wind}}$ are too large. Keeping the particle oscillating above the midplane at a steady vertical displacement requires fine-tuning the variables that we would like to continue studying in future work.
+This particular trajectory in the above 2 figures was simulated with very specific parameter values found by essentially trial-and-error. We hope to perform a Monte Carlo simulation in future work to determine the form of a typical trajectory, and to find the best fit for the multiple free parameters listed in __Table 1__. Something we discovered early on is the high sensitivity to small changes in the free parameter values. This is somewhat disheartening as it seems likely that many of the dust grains in the cloud will not follow this particular path and will be launched far above or below the disk. In the future we hope to look at the distribution of ![](https://latex.codecogs.com/png.latex?%5Cleft%7C%5Cdot%5Ctheta_0%5Cright%7C) for instance among the grains created from avalanches to see how the clouds would move.  
 
-<img src="thetaDot.png" alt="drawing" style="width:420px;"/>
 
-<img src="tMag.png" alt="drawing" style="width:420px;"/>
+In the figures below, we plot the path of the dust grain in physical space for various parameter values. In these plots, if a parameter is not being varied, its value is given in Table 1. It is evident that a charged particle will be launched into one direction if ![](https://latex.codecogs.com/png.latex?%5Cleft%7C%5Cdot%5Ctheta_0%5Cright%7C), ![](https://latex.codecogs.com/png.latex?t_%7B%5Ctextrm%7Bmag%7D%7D), or ![](https://latex.codecogs.com/png.latex?v_%7B%5Ctextrm%7Bwind%7D%7D) are too large. Keeping the particle oscillating above the midplane at a steady vertical displacement requires fine-tuning the variables that we would like to continue studying in future work.
 
-<img src="vwind.png" alt="drawing" style="width:420px;"/>
+<img src="images/thetaDot.png" alt="drawing" style="width:420px;"/>
 
-<img src="WindStrength.png" alt="drawing" style="width:480px;"/>
+<img src="images/tMag.png" alt="drawing" style="width:420px;"/>
 
-<img src="highPhase.png" alt="drawing" style="width:420px;"/>
+<img src="images/vwind.png" alt="drawing" style="width:420px;"/>
 
-<img src="spacePeriod.png" alt="drawing" style="width:420px;"/>
+<img src="images/WindStrength.png" alt="drawing" style="width:480px;"/>
 
-<img src="startSector.png" alt="drawing" style="width:420px;"/>
+<img src="images/highPhase.png" alt="drawing" style="width:420px;"/>
+
+<img src="images/spacePeriod.png" alt="drawing" style="width:420px;"/>
+
+<img src="images/startSector.png" alt="drawing" style="width:420px;"/>
 
 ## <u>Conclusion</u>
 Modeling the astrophysical current sheet as a Parker spiral instead of a flat plane results in a dust grain trajectory that resembles the strange observations, at least to general shape. We would like to continue improving this work and take the following steps. We hope to construct a more detailed model of the ACS. We will likely not be able to model its detailed substructure such as small waves on the undulating surface itself due to velocity shears (Smith 2001), but we aim to at least incorporate the time-dependent tilt of the ACS. In addition, although we compared the projected positions and velocities of the clouds with observations and Chiang & Fung's work, we would like to more rigorously verify that this new model is still consistent with the other findings such as the mass-loss rate of AU Mic and the cloud sizes. We have not yet investigated the relationship between M dwarf rotation rates and magnetic field activity, but we think this would be a fruitful exercise. And lastly, we eagerly await further observations and calculations of AU Mic's stellar wind strength, magnetic cycle period, etc. in order to better constrain our model. 
@@ -200,16 +194,4 @@ Planets VI, ed. H. Beuther (Tucson, AZ: Univ. Arizona Press), 521
 Smith, E. J. 2001, Journal of Geophysical Research, 106, A8
 
 Strubbe, L. E., & Chiang, E. I. 2006, ApJ, 648, 652
-
-
-
-```javascript
-%%javascript
-MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-```
-
-
-    <IPython.core.display.Javascript object>
 
